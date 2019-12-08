@@ -1,38 +1,92 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  margin: 2rem auto;
+  max-width: 800px;
+  font-family: helvetica, sans-serif;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.ui.table td {
+  padding: 24px;
+  background-color: white;
+  height: 72px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #505050;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ui.table td.narrow {
+  padding: 0;
+}
+
+.ui.button {
+  display: block;
+  margin: auto;
+}
+
+.button {
+  background-color: lightgrey;
+  border: none;
+  color: grey;
+  padding: 15px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.content-editable {
+  padding: 1rem;
+}
+
+.content-editable:hover {
+  background: rgb(238, 234, 234);
+}
+
+.content-editable:focus {
+  background: rgb(238, 234, 234);
+  outline: 0;
+}
+
+.headline{
+  color:rgb(92, 91, 91);
+  padding: 24x;
+  padding-bottom: 30px;
+}
+
+.headercell{
+  background-color: white;
+  line-height: 48px;
+}
+
+.narrow{
+  width: 912px;
+}
+
+.holder {
+  margin: 16px;
+  line-height: 20px;
+  outline: 1px solid rgb(165, 164, 164);
+  background-color: rgb(238, 234, 234);
+
+}
+.holder:before {
+  content: attr(placeholder);
+  color: lightgray;
+  display: inline-block;
+  position: absolute;
+  font-size: 16px;
+  padding:14px;
+}
+.holder:before {
+  color: gray;
+  display: inline-block;
+}
+div[contenteditable] {
+  z-index: 1;
+  position: relative;
+  background: white;
+}
+div[contenteditable]:empty {
+  background: transparent;
 }
