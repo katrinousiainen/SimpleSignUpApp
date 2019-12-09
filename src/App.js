@@ -14,7 +14,7 @@ class App extends Component {
       { id: 3, name: 'Brad Pitt', email: 'brad.pitt@hollywood.com', phone: '0404559403' },
       { id: 4, name: 'Tom Cruise', email: 'tom.cruise@hollywood.com', phone: '0405239403' },
       { id: 5, name: 'Kiefer Sutherland', email: 'kiefer.sutherland@hollywood.com', phone: '0402439403' },
-      { id: 6, name: 'Denzel Washington', email: 'denzel.washington@hollywood.com', phone: '0405299403' },
+      { id: 6, name: 'Will Smith', email: 'will.smith@hollywood.com', phone: '0405299403' },
       { id: 7, name: 'Adam Sandler', email: 'adam.sandler@hollywood.com', phone: '040153403' },
       { id: 8, name: 'Johnny Depp', email: 'johnny.depp@hollywood.com', phone: '0405349403' },
       { id: 9, name: 'Viggo Mortensen', email: 'viggo.mortensen@hollywood.com', phone: '0405509403' },
