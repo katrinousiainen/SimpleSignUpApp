@@ -3,7 +3,7 @@
 Live application URL:
 https://simplesignupform.azurewebsites.net/
 
-## Installation
+## How to run
 
 Clone the repository to your computer by running:
 git clone https://github.com/katrinousiainen/SimpleSignUpApp.git
