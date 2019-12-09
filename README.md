@@ -6,7 +6,7 @@ https://simplesignupform.azurewebsites.net/
 ## How to run
 
 Clone the repository to your computer by running:
-git clone https://github.com/katrinousiainen/SimpleSignUpApp.git
+git clone https://github.com/katrinousiainen/SimpleSignupForm.git
 
 Navigate into the directory and install all the dependencies by running:
 npm install
