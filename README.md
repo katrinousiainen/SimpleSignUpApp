@@ -3,15 +3,15 @@
 Live application URL:
 https://simplesignupform.azurewebsites.net/
 
-## Installation:
+## Installation
 
-Clone the repository to your computer by running
-### 'git clone https://github.com/katrinousiainen/SimpleSignUpApp.git'
+Clone the repository to your computer by running:
+git clone https://github.com/katrinousiainen/SimpleSignUpApp.git
 
-Navigate into the directory and install all the dependencies by running
-### 'npm install'
+Navigate into the directory and install all the dependencies by running:
+npm install
 
-Type npm start to run the app locally
-### 'npm start'
+Run the app locally by typing:
+npm start
 
 Open the directory in any code editor to inspect the code. 

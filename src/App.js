@@ -10,15 +10,15 @@ class App extends Component {
   initialState = {
     people: [
       { id: 1, name: 'George Clooney', email: 'george.clooney@hollywood.com', phone: '0405859403' },
-      { id: 2, name: 'George Clooney', email: 'george.clooney@hollywood.com', phone: '0405859403' },
-      { id: 3, name: 'George Clooney', email: 'george.clooney@hollywood.com', phone: '0405859403' },
-      { id: 4, name: 'George Clooney', email: 'george.clooney@hollywood.com', phone: '0405859403' },
-      { id: 5, name: 'George Clooney', email: 'george.clooney@hollywood.com', phone: '0405859403' },
-      { id: 6, name: 'George Clooney', email: 'george.clooney@hollywood.com', phone: '0405859403' },
-      { id: 7, name: 'George Clooney', email: 'george.clooney@hollywood.com', phone: '0405859403' },
-      { id: 8, name: 'George Clooney', email: 'george.clooney@hollywood.com', phone: '0405859403' },
-      { id: 9, name: 'George Clooney', email: 'george.clooney@hollywood.com', phone: '0405859403' },
-      { id: 10, name: 'George Clooney', email: 'george.clooney@hollywood.com', phone: '0405859403' }
+      { id: 2, name: 'Tom Hanks', email: 'tom.hanks@hollywood.com', phone: '0405859343' },
+      { id: 3, name: 'Brad Pitt', email: 'brad.pitt@hollywood.com', phone: '0404559403' },
+      { id: 4, name: 'Tom Cruise', email: 'tom.cruise@hollywood.com', phone: '0405239403' },
+      { id: 5, name: 'Kiefer Sutherland', email: 'kiefer.sutherland@hollywood.com', phone: '0402439403' },
+      { id: 6, name: 'Denzel Washington', email: 'denzel.washington@hollywood.com', phone: '0405299403' },
+      { id: 7, name: 'Adam Sandler', email: 'adam.sandler@hollywood.com', phone: '040153403' },
+      { id: 8, name: 'Johnny Depp', email: 'johnny.depp@hollywood.com', phone: '0405349403' },
+      { id: 9, name: 'Viggo Mortensen', email: 'viggo.mortensen@hollywood.com', phone: '0405509403' },
+      { id: 10, name: 'Jackie Chan', email: 'jackie.chan@hollywood.com', phone: '040582003' }
     ],
     row: {
       name: '',
@@ -77,7 +77,7 @@ class App extends Component {
   validateNumbersInPhone = event => {
     const keyCode = event.keyCode || event.which
     const string = String.fromCharCode(keyCode)
-    const regex = /[0-9,]|\./
+    const regex = /[0-9,+]|\./
   
     if (!regex.test(string)) {
       event.returnValue = false
@@ -113,7 +113,6 @@ class App extends Component {
       }
     })
   }
-
 
   render() {
     const {
@@ -165,7 +164,7 @@ class App extends Component {
         /></div>
       </Table.Cell>
       <Table.Cell className="narrow">
-        <Button id="button"  disabled={!name || !email || !phone} onClick={this.addRow}>Add new</Button>
+        <Button id="button"  disabled={!name || !email || !phone} onClick={this.addRow}><b>Add new</b></Button>
       </Table.Cell>
     </Table.Row>
           </Table.Body>
@@ -219,12 +218,12 @@ class App extends Component {
             </Table.Cell>
             
           <Table.Cell className="narrow">
-            <Button
+            <Button id="button2"
               onClick={() => {
                 this.deleteRow(row.id)
               }}
               ><FaTrash/>
-            </Button>
+            </Button> 
           </Table.Cell>
         </Table.Row>
       )
@@ -235,7 +234,6 @@ class App extends Component {
     )
   }
 }
-
 
 export default App;
 

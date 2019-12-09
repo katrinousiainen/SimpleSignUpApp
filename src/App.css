@@ -1,22 +1,31 @@
 .App {
   margin: 2rem auto;
-  max-width: 800px;
+  max-width: 912px;
   font-family: helvetica, sans-serif;
   align-items: center;
 }
 
+.ui.table {  
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
 .ui.table td {
-  padding: 24px;
   background-color: white;
   height: 72px;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  color: #505050;
+  color: rgb(80,80,80);
+  width: 260px;
+  border: none;
 }
 
 .ui.table td.narrow {
   padding: 0;
+  word-wrap: break-word;
+  border-top: 1px solid #c7c7c7;
+  color: rgb(80,80,80);
 }
 
 .ui.button {
@@ -25,18 +34,28 @@
 }
 
 .button {
-  background-color: lightgrey;
+  background-color: rgb(237, 237, 237);
   border: none;
-  color: grey;
-  padding: 15px 40px;
+  color: #909090;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 16px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  height: 40px;
 }
 
+#button2 {
+  background-color: white;
+}
 .content-editable {
   padding: 1rem;
+  display: block;
+  overflow: auto;
+  color:rgb(148,148,148);
+  word-wrap: break-word;
 }
 
 .content-editable:hover {
@@ -49,7 +68,7 @@
 }
 
 .headline{
-  color:rgb(92, 91, 91);
+  color: #757575;
   padding: 24x;
   padding-bottom: 30px;
 }
@@ -57,17 +76,22 @@
 .headercell{
   background-color: white;
   line-height: 48px;
+  color: #757575;
+  text-align: left;
+  padding-left: 16px;
 }
 
 .narrow{
-  width: 912px;
+  max-width: 280px;
+  word-wrap: break-word;
 }
 
 .holder {
   margin: 16px;
   line-height: 20px;
   outline: 1px solid rgb(165, 164, 164);
-  background-color: rgb(238, 234, 234);
+  background-color: rgb(250, 250, 250);
+  width: 228px;
 
 }
 .holder:before {
